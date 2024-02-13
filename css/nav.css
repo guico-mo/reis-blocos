@@ -1,0 +1,145 @@
+.reis {
+  width: 184px;
+  margin-block: 10px;
+  padding: 8px;
+  margin-inline-start: 21px;
+}
+
+header {
+  max-height: 128px;
+}
+
+.barra{
+  display: flex;
+  align-items: center;
+}
+
+.lista{
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.lista>li{
+  list-style-type: none;
+}
+
+.lista>li>a {
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ab1016;
+  color: #000000;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  padding-inline: 10px;
+  padding-block: 4px;
+}
+
+.lista>li>a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #ab1016;
+}
+
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #0d0d0d;
+  cursor: pointer;
+  width: 30px;
+  padding: 0;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: " ";
+  display: grid;
+  width: 30px;
+  height: 3px;
+  background: #0d0d0d;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.navig-burg-space{
+  margin-inline: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .barra{
+    justify-content: space-between;
+  }
+
+  .hamburguer {
+    display: block;
+    z-index: 1001;
+    border: none;
+    background: none;
+    border-top: 3px solid #0d0d0d;
+    cursor: pointer;
+  }
+
+  .lista {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    clip-path: circle(100px at 90% -35%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .lista{
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 28px;
+    margin: 0;
+  }
+
+  .lista a {
+    opacity: 0;
+  }
+
+  .navig.active .lista {
+    clip-path: circle(2000px at 90% -35%);
+    pointer-events: all;
+    padding: 20px;
+  }
+
+  .navig.active .lista a {
+    opacity: 1;
+  }
+
+  .navig.active .hamburguer {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .navig.active .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  .navig.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -8px;
+  }
+
+  .navig.active .lista li {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+  }
+}

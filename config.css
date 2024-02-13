@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #ffffff;
+    --third-color: #262626;
+    --fourth-color: #ACACAC;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --gti-color: #008BCA;
+    --shade-back: #9C9C9C;
+    --select-menu: #262626;
+    --shadow-pattern: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    --line: 1px solid #262626;
+    --hover: #004C76;
+    --top: #bbbbbb;
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #008BCA;
+}
+html ::-webkit-scrollbar-track {
+    background: #004C76;
+}

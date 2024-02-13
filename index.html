@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reis Blocos e Pisos</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script defer src="js/burger.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9df45e6afb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.popup-image').style.display = 'none';
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentYear = new Date().getFullYear();
+            var copyrightYearElement = document.getElementById('copyrightYear');
+
+            if (copyrightYearElement) {
+                copyrightYearElement.textContent = currentYear;
+            }
+        });
+    </script>
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="carousel/carousel.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wa-link">
+        <a class="whatsapp-link" href="https://wa.me/+5575998771010" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <header id="header">
+        <div class="barra">
+            <img src="media/logo.png" alt="Reis Blocos e Pisos Logo" class="reis">
+            <div class="navig">
+                <div class="navig-burg-space">
+                    <button class="hamburguer"></button>
+                </div>
+                <ul class="lista">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Quem Somos</a></li>
+                    <li><a href="#products-main">Produtos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image bg-img-1 active">
+                </div>
+                <div class="carousel-item carousel-image bg-img-2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <div class="about-bg">
+        </div>
+        <div class="about-info">
+            <div>
+                <h5>QUEM SOMOS</h5>
+                <h2>Conheça REIS BLOCOS E PISOS</h2>
+                <p>A REIS Blocos e Pisos é uma empresa especializada na comercialização de blocos, pisos e entre outros
+                    artefatos de concreto.</p>
+                <p>Atua no mercado fornecendo a seus clientes um atendimento personalizado, através de uma equipe
+                    altamente qualificada para entender e atender às necessidades específicas de cada cliente,
+                    garantindo assim a satisfação e fidelidade de nossa clientela.</p>
+            </div>
+        </div>
+    </div>
+    <div id="products-main" class="products-main">
+        <div class="products-info">
+            <h1>Nossos Produtos</h1>
+            <p>Os produtos <span>REIS Blocos e Pisos</span> seguem normas e também são testados regularmente e aprovados
+                por diversas instituições independentes, como universidades, escolas e laboratórios privados.</p>
+        </div>
+        <div class="products-images">
+            <div class="id-img">
+                <img src="produtos\calha.png" alt="Imagem Calha" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\cobogó.png" alt="Imagem Cobogó" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\estrutural.png" alt="Imagem Bloco Estrutural" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\intertravado.png" alt="Imagem Piso Intertravado" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\pingadeiras.png" alt="Imagem Pingadeiras" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\tatil.png" alt="Imagem Piso Tátil" class="prod-img">
+            </div>
+            <div class="id-img">
+                <img src="produtos\vedação.png" alt="Imagem Bloco Vedação" class="prod-img">
+            </div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="produtos/cobogó.png" alt="Imagem">
+        </div>
+    </div>
+    <div class="location">
+        <h1>Localização</h1>
+        <p>Av. Eduardo Fróes da Mota, 1452<br>
+            CIS - Tomba<br>
+            CEP.: 44010-025<br>
+            Feira de Santana - BA</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3898.4802063519705!2d-38.97678520768737!3d-12.283414508058675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x714376217109f67%3A0xd996ff5b476dc5ec!2sREIS%20Blocos%20e%20Pisos%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1707847039324!5m2!1spt-BR!2sbr"
+            class="maps" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="brand">
+            <img src="media/logo-footer.png" alt="REIS Blocos e Pisos Logo" class="logo-footer">
+            <p>&copy; <span id="copyrightYear">2022</span> Todos os direitos reservados.</p>
+            <a href="https://linktr.ee/guilherme.correia" target="_blank" class="link-footer">Desenvolvido por Guilherme
+                Correia.</a>
+        </div>
+        <div id="linha-footer"></div>
+        <div id="contact">
+            <div class="links-footer">
+                <!-- telefone -->
+                <a href="tel:75998771010" target="_blank" class="link-footer">
+                    <div class="test0">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p>(75) 99877-1010</p>
+                </a>
+                <!-- email -->
+                <a href="mailto:reisblocosepisos@gmail.com" target="_blank" class="link-footer">
+                    <div class="test0">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <p>reisblocosepisos@gmail.com</p>
+                </a>
+                <!-- instagram -->
+                <a href="https://www.instagram.com/reisblocosepisos/" target="_blank" class="link-footer">
+                    <div class="test0">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <p>@reisblocosepisos</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.querySelectorAll('.id-img img').forEach(image => {
+        image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+
+</html>

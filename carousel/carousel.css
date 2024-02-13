@@ -1,0 +1,28 @@
+.bg-img-1 {
+    background-image: url('img1.jpg');
+}
+
+.bg-img-2 {
+    background-image: url('img2.jpg');
+}
+
+.carousel-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px){
+    .bg-img-1 {
+        background-image: url('img3.jpg');
+    }
+    
+    .bg-img-2 {
+        background-image: url('img4.jpg');
+    }
+
+    .carousel-image{
+        height: 75vh;
+    }
+}
